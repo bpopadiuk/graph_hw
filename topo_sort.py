@@ -38,20 +38,22 @@ class GraphEL(object):
         return set(self.edges) == set(g.edges)
 
 def kahn_toposort(graph):
-    no_incoming = build_no_incoming(graph)
-    L = []
     edges = build_edge_dict(graph)
+    no_incoming = build_no_incoming(graph)
+    yes_incoming = [x for v in edges.values() for x in v]
+    L = []
 
     while len(no_incoming) > 0:
         n = no_incoming.pop()
         L.append(n)
         if n not in edges.keys():
             continue
-        values = list(edges[n])
-        for i in values:
-            edges[n].remove(i)
-            if i not in [x for v in edges.values() for x in v]: 
+        for i in edges[n]:
+            yes_incoming.remove(i)
+            if i not in yes_incoming:
                 no_incoming.add(i)
+    if len(yes_incoming) > 0:
+        print('ERROR: Cycle detected')
                 
     return L 
 
