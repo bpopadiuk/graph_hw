@@ -79,5 +79,8 @@ def build_no_incoming(graph):
 
 cascadia_web_serv = GraphEL(11, [(1,2), (2,3), (2,10), (2,5), (9,3), (9,10), (9,5), (9,11), (7,5), (7,8), (3,4), (10,6), (5,6)])
 topological_sort = kahn_toposort(cascadia_web_serv)
+wiki_graph = GraphEL(8, [(5,11), (7, 11), (3, 8), (11, 2), (11, 9), (11, 10), (8, 9), (3,10), (7, 8)])
+wiki_sort = kahn_toposort(wiki_graph)
 print('topological sort of graph: ', cascadia_web_serv)
 print(topological_sort)
+print('wiki: ', wiki_sort)
