@@ -35,47 +35,27 @@ class GraphEL(object):
         )
 
 def kruskal(graph):
+    """Build a minimum spanning tree of graph using Kruskal's Algorithm. 
+       Return as GraphEL object"""
+
     s = setUnion(graph.nvertices)
     graph.sortbyWeight()
     treeEdgelist = []
     vertices = list(graph.vertices)
-    edgeDict = { vertices[i] : i + 1 for i in range(graph.nvertices)} 
-#    print(graph.vertices)
-#    print(graph.nvertices)
-#    print(edgeDict)
-#    print(edgeDict.values())
+    edgeDict = {vertices[i] : i + 1 for i in range(graph.nvertices)} # map edges to ints 1-45 to feed to setUnion structure
 
-    print(graph.edges)
-    while len(treeEdgelist) < graph.nvertices - 1:
-        for i in graph.edges:
-            print(i)
-            if not s.sameComponent(edgeDict[i[0]], edgeDict[i[1]]):
-#               print('edge: ' , i, ' in MST')
-                treeEdgelist.append(i)
-                s.unionSets(edgeDict[i[0]], edgeDict[i[1]])
-#           else:
-#               print('edge: ', i, 'would cause a cycle!')
+    for i in graph.edges:
+        if not s.sameComponent(edgeDict[i[0]], edgeDict[i[1]]):
+            print('edge: ' , i, ' in MST')
+            treeEdgelist.append(i)
+            s.unionSets(edgeDict[i[0]], edgeDict[i[1]])
+        else:
+            print('edge: ', i, 'would cause a cycle!')
+        if len(treeEdgelist) == graph.nvertices - 1:
+            break
 
-    print(treeEdgelist)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    treeGraph = GraphEL(len(vertices), treeEdgelist)
+    return treeGraph
 
 
 def build_graphAL(graph):
@@ -103,6 +83,8 @@ def build_cpy(graph):
     return edge_dict
 
 def process_file(fhand):
+    """Build a GraphEL object from edges file pointed to by fhand"""
+
     edge_list = []
     vertices = set()
     for line in fhand:
@@ -117,13 +99,11 @@ def process_file(fhand):
         vertices.add(item[1])
     graph = GraphEL(len(vertices), edge_list)
     return graph
-
-def sortbyWeight(edgeList):
-        edgeList = sorted(self.edges, key=lambda edge: edge[2])
-
-
     
 
 fhand = open('amtrak.txt')
 myGraph = process_file(fhand)
-kruskal(myGraph)
+minSpanningtree = kruskal(myGraph)
+print('\n\nMINIMUM SPANNING TREE:\n\n')
+print(minSpanningtree)
+

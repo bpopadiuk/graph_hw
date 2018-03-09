@@ -38,6 +38,9 @@ class GraphEL(object):
         return set(self.edges) == set(g.edges)
 
 def kahn_toposort(graph):
+    """Create topological sort of graph, return as list.
+       Fail if cycle is detected."""
+
     edges = build_edge_dict(graph)
     no_incoming = build_no_incoming(graph)
     yes_incoming = [x for v in edges.values() for x in v]
@@ -58,6 +61,8 @@ def kahn_toposort(graph):
     return L 
 
 def build_edge_dict(graph):
+    """Create adjacency list representation of graph"""
+
     edge_dict = dict()
     for i, j in graph.edges:
         if i not in edge_dict:
