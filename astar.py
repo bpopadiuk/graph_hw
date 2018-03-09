@@ -1,11 +1,9 @@
 # Copyright (c) 2018 Boris Popadiuk
 
-# Implementation of Dijkstra's Algorithm
+# Implementation of A* Algorithm and Dijkstra's Algorithm
 # For New Beginnings Algorithms Winter 2018
 
 from math import inf
-from pq_heap import pqueue
-import re
 
 KM_TO_MILES = 0.621371
 
@@ -115,9 +113,9 @@ def aStar(graph, start, end):
         openSet.remove(current)
 
     path = reconstruct_path(start, end, parents)
-    print('Minimum path from ', start, ' to ', end, ': ', gScore[end], ' miles')
+    print('\nMinimum path from ', start, ' to ', end, ': ', gScore[end], ' miles')
     print('path: ', path)
-    print('aStar ntries: ', ntries)
+    print('aStar ntries: ', ntries, '\n')
     return True
 
 def process_file(fhand):

@@ -1,3 +1,8 @@
+# Copyright (c) 2018 Boris Popadiuk
+
+# Implementation of Union Find data structure based on implementation in Skiena's Algorithm Design Manual
+# Written for New Beginnings Algorithms Winter 2018
+
 class setUnion(object):
     """Union-Find data structure"""
 

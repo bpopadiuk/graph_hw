@@ -1,5 +1,6 @@
 # Copyright (c) 2018 Boris Popadiuk
 
+# Implementation of Kahn's Algorithm to yield topological sort of a DAG
 # Written for New Beginnings Algorithms Winter 2018, Portland State University
 
 class GraphEL(object):
