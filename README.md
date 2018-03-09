@@ -17,7 +17,7 @@
    [Link to Output of Kruskal's](./TestOutput/kruskal_output) 
 
 6. The new minimal route would save 14 edges, or 10,131.9 miles of track. This is a 24% savings in edges and 
-   a 49% savings in mileage. [Link to graphCompare](graphweight_comparison.py), [Link to graphCompare output](./TestOutput/graphcomp_output) 
+   a 49% savings in mileage. [Link to graphCompare](./GraphPKG/gcomp.py), [Link to graphCompare output](./TestOutput/graphcomp_output) 
 
    The 14 edges saved reduces the total edge count form 58 to 44, or n - 1 edges, where n is the number of vertices. 
    This is what is required of a miminum spanning tree.
