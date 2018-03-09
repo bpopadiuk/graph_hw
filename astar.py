@@ -3,32 +3,33 @@
 # Implementation of A* Algorithm and Dijkstra's Algorithm
 # For New Beginnings Algorithms Winter 2018
 
-from math import inf
+import math
+from Classes import UDG
 
 KM_TO_MILES = 0.621371
 
-class GraphEL(object):
-    """Graph Edge List Class, written and distributed to class by Bart Massey"""
-
-    def __init__(self, nvertices, edges, directed=False):
-        "Create an edge-list graph."
-        self.nvertices = nvertices
-        self.directed = directed
-        if directed:
-            self.edges = edges
-        else:
-            self.edges = set()
-            for v1, v2, w in edges:
-                self.edges.add((v1, v2, w))
-                self.edges.add((v2, v1, w))
-            self.edges = list(self.edges)
-
-    def __repr__(self):
-        return "GraphEL({}, {}, directed={})".format(
-            self.nvertices,
-            self.edges,
-            self.directed
-        )   
+#class GraphEL(object):
+#    """Graph Edge List Class, written and distributed to class by Bart Massey"""
+#
+#    def __init__(self, nvertices, edges, directed=False):
+#        "Create an edge-list graph."
+#        self.nvertices = nvertices
+#        self.directed = directed
+#        if directed:
+#            self.edges = edges
+#        else:
+#            self.edges = set()
+#            for v1, v2, w in edges:
+#                self.edges.add((v1, v2, w))
+#                self.edges.add((v2, v1, w))
+#            self.edges = list(self.edges)
+#
+#    def __repr__(self):
+#        return "GraphEL({}, {}, directed={})".format(
+#            self.nvertices,
+#            self.edges,
+#            self.directed
+#        )   
 
 def build_graphAL(graph):
     """Convert graph edge list to adjacency list representation, 
@@ -64,7 +65,7 @@ def dijkstras_path(graph, start, end):
     openSet = {node[0] for node in graph.edges} 
     graphAL = build_graphAL(graph)
     parents = {start:None}
-    gScore = {node[0]:inf for node in graph.edges}
+    gScore = {node[0]:math.inf for node in graph.edges}
     gScore[start] = 0 
    
     while end not in closedSet:
@@ -93,10 +94,10 @@ def aStar(graph, start, end):
     openSet = {node[0] for node in graph.edges} 
     graphAL = build_graphAL(graph)
     parents = {start:None}
-    gScore = {node[0]:inf for node in graph.edges}
+    gScore = {node[0]:math.inf for node in graph.edges}
     gScore[start] = 0 
     euclidDistances = get_euclid(open('am_euclidian.txt'), end)
-    fScore = {node[0]:inf for node in graph.edges}
+    fScore = {node[0]:math.inf for node in graph.edges}
     fScore[start] = euclidDistances[start]
 
     while end not in closedSet:
@@ -131,7 +132,7 @@ def process_file(fhand):
     for item in edge_list:
         vertices.add(item[0])
         vertices.add(item[1])
-    graph = GraphEL(len(vertices), edge_list)
+    graph = UDG.GraphEL(len(vertices), edge_list)
     return graph
 
 def get_euclid(fhand, end):
