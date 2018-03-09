@@ -1,4 +1,10 @@
+# Copyright (c) 2018 Boris Popadiuk
+
+# Written for New Beginnings Algorithms Winter 2018, Portland State University
+
 class GraphEL(object):
+    """Edgelist graph class. Written by Bart Massey and shared with students"""
+
     def __init__(self, nvertices, edges, directed=True):
         "Create an edge-list graph."
         self.nvertices = nvertices
@@ -72,6 +78,8 @@ def build_edge_dict(graph):
     return edge_dict
                 
 def build_no_incoming(graph):
+    """Compile set of vertices with no incoming edges"""
+
     no_incoming = set()
     yes_incoming = set()
     for i, j in graph.edges:
