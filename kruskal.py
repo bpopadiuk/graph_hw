@@ -45,7 +45,7 @@ def process_file(fhand):
     return graph
     
 if __name__ == "__main__":
-    fhand = open('amtrak.txt')
+    fhand = open('./Data/amtrak.txt')
     myGraph = process_file(fhand)
     minSpanningtree = kruskal(myGraph)
     print('\n\nMINIMUM SPANNING TREE:\n\n')

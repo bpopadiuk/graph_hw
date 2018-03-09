@@ -73,7 +73,7 @@ def aStar(graph, start, end):
     parents = {start:None}
     gScore = {node[0]:math.inf for node in graph.edges}
     gScore[start] = 0 
-    euclidDistances = get_euclid(open('am_euclidian.txt'), end)
+    euclidDistances = get_euclid(open('./Data/am_euclidian.txt'), end)
     fScore = {node[0]:math.inf for node in graph.edges}
     fScore[start] = euclidDistances[start]
 
@@ -122,7 +122,7 @@ def get_euclid(fhand, end):
             fScore[line[1]] = float(line[2]) * KM_TO_MILES
     return fScore
 
-fhand = open('amtrak.txt')
+fhand = open('./Data/amtrak.txt')
 graph = process_file(fhand)
 aStar(graph, 'Emeryville', 'Raleigh')
 dijkstras_path(graph, 'Emeryville', 'Raleigh')
