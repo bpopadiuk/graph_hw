@@ -3,6 +3,7 @@
 
 from math import inf
 from unionfind import setUnion
+from graphweight_comparison import graphCompare
 
 class GraphEL(object):
     """Graph Edge List Class, written and distributed to class by Bart Massey"""
@@ -23,6 +24,12 @@ class GraphEL(object):
         for v1, v2, w in self.edges:
             self.vertices.add(v1)
             self.vertices.add(v2)
+        self.GraphAL = dict()
+        for i in self.edges:
+            if i[0] not in self.GraphAL:
+                self.GraphAL[i[0]] = [(i[1], i[2])]
+            else:
+                self.GraphAL[i[0]].append((i[1], i[2]))
             
     def sortbyWeight(self):
         self.edges = sorted(self.edges, key=lambda edge: edge[2])
@@ -58,29 +65,29 @@ def kruskal(graph):
     return treeGraph
 
 
-def build_graphAL(graph):
-    """Convert graph edge list to adjacency list representation, 
-       return as dictionary"""
+#def build_graphAL(graph):
+#    """Convert graph edge list to adjacency list representation, 
+#       return as dictionary"""
+#
+#    edge_dict = dict()
+#    for i in graph.edges:
+#        if i[0] not in edge_dict:
+#            edge_dict[i[0]] = [(i[1], i[2])]
+#        else:
+#            edge_dict[i[0]].append((i[1], i[2]))
+#    return edge_dict
 
-    edge_dict = dict()
-    for i in graph.edges:
-        if i[0] not in edge_dict:
-            edge_dict[i[0]] = [(i[1], i[2])]
-        else:
-            edge_dict[i[0]].append((i[1], i[2]))
-    return edge_dict
-
-def build_cpy(graph):
-    """Convert graph edge list to adjacency list representation, 
-       return as dictionary"""
-
-    edge_dict = dict()
-    for i in graph.edges:
-        if i[0] not in edge_dict:
-            edge_dict[i[0]] = [[i[1], inf]]
-        else:
-            edge_dict[i[0]].append([i[1], inf])
-    return edge_dict
+#def build_cpy(graph):
+#    """Convert graph edge list to adjacency list representation, 
+#       return as dictionary"""
+#
+#    edge_dict = dict()
+#    for i in graph.edges:
+#        if i[0] not in edge_dict:
+#            edge_dict[i[0]] = [[i[1], inf]]
+#        else:
+#            edge_dict[i[0]].append([i[1], inf])
+#    return edge_dict
 
 def process_file(fhand):
     """Build a GraphEL object from edges file pointed to by fhand"""
@@ -100,10 +107,10 @@ def process_file(fhand):
     graph = GraphEL(len(vertices), edge_list)
     return graph
     
-
-fhand = open('amtrak.txt')
-myGraph = process_file(fhand)
-minSpanningtree = kruskal(myGraph)
-print('\n\nMINIMUM SPANNING TREE:\n\n')
-print(minSpanningtree)
-
+if __name__ == "__main__":
+    fhand = open('amtrak.txt')
+    myGraph = process_file(fhand)
+    minSpanningtree = kruskal(myGraph)
+    print('\n\nMINIMUM SPANNING TREE:\n\n')
+    print(minSpanningtree)
+    graphCompare(myGraph, minSpanningtree)

@@ -1,0 +1,11 @@
+Script started on Fri 09 Mar 2018 09:19:53 AM PST
+
+Graph 1: 45 vertices, 58 edges, 20409.50 total weight.
+Graph 2: 45 vertices, 44 edges, 10277.60 total weight.
+Weight Difference: 10131.90 -- 49.64% of original map
+Edge Difference: 14 -- 24.14% of original map
+
+pboris@ada:~/Bart/graph_hw$ exit
+exit
+
+Script done on Fri 09 Mar 2018 09:19:57 AM PST

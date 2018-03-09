@@ -38,9 +38,3 @@ class setUnion(object):
 
     def sameComponent(self, s1, s2):
         return self.find(s1) == self.find(s2)
-
-
-
-
-unionFind = setUnion(10)
-print(unionFind.nElements, unionFind.parent, unionFind.size)

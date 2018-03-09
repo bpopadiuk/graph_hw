@@ -1,0 +1,14 @@
+Script started on Fri 09 Mar 2018 09:26:48 AM PST
+pboris@ada:~/Bart/graph_hw$ python3 astar.py 
+
+Minimum path from  Emeryville  to  Raleigh :  3173.4999999999995  miles
+path:  ['Emeryville', 'Los_Angeles', 'San_Antonio', 'New_Orleans', 'Raleigh']
+aStar ntries:  24 
+
+Minimum path from  Emeryville  to  Raleigh :  3173.4999999999995  miles
+path:  ['Emeryville', 'Los_Angeles', 'San_Antonio', 'New_Orleans', 'Raleigh']
+Dijkstra's ntries:  37
+pboris@ada:~/Bart/graph_hw$ exit
+exit
+
+Script done on Fri 09 Mar 2018 09:27:08 AM PST
