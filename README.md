@@ -1,4 +1,4 @@
-<h2>graph_hw for New Beginnings Winter 2018 Algorithms</h2>
+<h2>Graph Homework for New Beginnings Winter 2018 Algorithms</h2>
 
 1.  a) 1, 2, 9, 7, 3, 10, 5, 11, 8, 4, 6
     b) 1, 9, 2, 7, 3, 10, 5, 11, 8, 4, 6
