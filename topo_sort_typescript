@@ -1,0 +1,10 @@
+Script started on Thu 08 Mar 2018 09:18:47 PM PST
+pboris@ada:~/Bart/graph_hw$ exitpython3 topo_sort.py 
+
+Graph:  GraphEL(11, [(1, 2), (2, 3), (2, 10), (2, 5), (9, 3), (9, 10), (9, 5), (9, 11), (7, 5), (7, 8), (3, 4), (10, 6), (5, 6)], directed=True)
+Topological Sort:  [1, 2, 9, 7, 8, 10, 11, 3, 4, 5, 6] 
+
+pboris@ada:~/Bart/graph_hw$ exit
+exit
+
+Script done on Thu 08 Mar 2018 09:18:57 PM PST
