@@ -4,7 +4,7 @@
 # For New Beginnings Algorithms Winter 2018
 
 import math
-from GraphPKG import UDG
+from GraphPKG import UDG, pf 
 
 KM_TO_MILES = 0.621371
 
@@ -96,22 +96,6 @@ def aStar(graph, start, end):
     print('aStar ntries: ', ntries, '\n')
     return True
 
-def process_file(fhand):
-    edge_list = []
-    vertices = set()
-    for line in fhand:
-        line = line.strip()
-        line = line.rstrip(')')
-        line = line.lstrip('(')
-        words = line.split(', ')
-        words[2] = float(words[2])
-        edge_list.append(tuple(words))
-    for item in edge_list:
-        vertices.add(item[0])
-        vertices.add(item[1])
-    graph = UDG.GraphEL(len(vertices), edge_list)
-    return graph
-
 def get_euclid(fhand, end):
     fScore = dict()
     fScore[end] = 0
@@ -123,6 +107,6 @@ def get_euclid(fhand, end):
     return fScore
 
 fhand = open('./Data/amtrak.txt')
-graph = process_file(fhand)
+graph = pf.process_file(fhand)
 aStar(graph, 'Emeryville', 'Raleigh')
 dijkstras_path(graph, 'Emeryville', 'Raleigh')
