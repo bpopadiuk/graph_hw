@@ -148,6 +148,3 @@ fhand = open('amtrak.txt')
 graph = process_file(fhand)
 aStar(graph, 'Emeryville', 'Raleigh')
 dijkstras_path(graph, 'Emeryville', 'Raleigh')
-#graph = GraphEL(5, [('S','A',7), ('S','B',2), ('A','B',3), ('A','D',4), ('B','D',4), ('B','H',1), ('D','F',5), ('F','H',3), 
-#    ('G','E',2), ('E','K',5), ('K','I',4), ('K','J',4), ('I','J',6), ('J','L',4), ('I','L',4), ('L','C',2), ('C','S',3), ('H','G',2)])
-
