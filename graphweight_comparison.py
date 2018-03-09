@@ -36,9 +36,3 @@ def graphCompare(graph1, graph2):
     print('Edge Difference: {} -- {:.2f}% of original map\n'.format(
         edgeDiff,
         100 * (edgeDiff / bigEdge)))
-
-if __name__ == "__main__":
-    fhand = open('amtrak.txt')
-    amtrakMap = process_file(fhand)
-    minSpanningtree = kruskal(amtrakMap)
-    graphCompare(amtrakMap, minSpanningtree)

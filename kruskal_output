@@ -1,0 +1,127 @@
+Script started on Fri 09 Mar 2018 09:32:08 AM PST
+pboris@ada:~/Bart/graph_hw$ python3 kruskal.py 
+edge:  ('Vancouver_WA', 'Portland', 8.9)  in MST
+edge:  ('Portland', 'Vancouver_WA', 8.9) would cause a cycle!
+edge:  ('Auburn', 'Sacramento', 33.0)  in MST
+edge:  ('Sacramento', 'Auburn', 33.0) would cause a cycle!
+edge:  ('New_Haven', 'Springfield', 63.8)  in MST
+edge:  ('Springfield', 'New_Haven', 63.8) would cause a cycle!
+edge:  ('Sacramento', 'Emeryville', 79.0)  in MST
+edge:  ('Emeryville', 'Sacramento', 79.0) would cause a cycle!
+edge:  ('New_York_City', 'New_Haven', 83.1)  in MST
+edge:  ('New_Haven', 'New_York_City', 83.1) would cause a cycle!
+edge:  ('Orlando', 'Tampa', 84.2)  in MST
+edge:  ('Tampa', 'Orlando', 84.2) would cause a cycle!
+edge:  ('Albany', 'Springfield', 87.4)  in MST
+edge:  ('Springfield', 'Albany', 87.4) would cause a cycle!
+edge:  ('Rutland', 'Albany', 90.9)  in MST
+edge:  ('Springfield', 'Boston', 90.9)  in MST
+edge:  ('Albany', 'Rutland', 90.9) would cause a cycle!
+edge:  ('Boston', 'Springfield', 90.9) would cause a cycle!
+edge:  ('Norfolk', 'Richmond', 93.3)  in MST
+edge:  ('Richmond', 'Norfolk', 93.3) would cause a cycle!
+edge:  ('Richmond', 'Newport_News', 96.2)  in MST
+edge:  ('Newport_News', 'Richmond', 96.2) would cause a cycle!
+edge:  ('Philadelphia', 'New_York_City', 96.7)  in MST
+edge:  ('New_York_City', 'Philadelphia', 96.7) would cause a cycle!
+edge:  ('Buffalo', 'Toronto', 98.9)  in MST
+edge:  ('Toronto', 'Buffalo', 98.9) would cause a cycle!
+edge:  ('Richmond', 'Washington_DC', 115.3)  in MST
+edge:  ('Washington_DC', 'Richmond', 115.3) would cause a cycle!
+edge:  ('Galesburg', 'Quincy', 118.4)  in MST
+edge:  ('Quincy', 'Galesburg', 118.4) would cause a cycle!
+edge:  ('Los_Angeles', 'San_Diego', 120.5)  in MST
+edge:  ('San_Diego', 'Los_Angeles', 120.5) would cause a cycle!
+edge:  ('Pittsburgh', 'Cleveland', 133.2)  in MST
+edge:  ('Cleveland', 'Pittsburgh', 133.2) would cause a cycle!
+edge:  ('Boston', 'Brunswick', 136.8)  in MST
+edge:  ('Brunswick', 'Boston', 136.8) would cause a cycle!
+edge:  ('New_Haven', 'Boston', 137.6) would cause a cycle!
+edge:  ('Boston', 'New_Haven', 137.6) would cause a cycle!
+edge:  ('Washington_DC', 'Philadelphia', 139.1)  in MST
+edge:  ('Philadelphia', 'Washington_DC', 139.1) would cause a cycle!
+edge:  ('Seattle', 'Vancouver_BC', 142.6)  in MST
+edge:  ('Vancouver_BC', 'Seattle', 142.6) would cause a cycle!
+edge:  ('Albany', 'New_York_City', 150.7) would cause a cycle!
+edge:  ('New_York_City', 'Albany', 150.7) would cause a cycle!
+edge:  ('Seattle', 'Vancouver_WA', 165.1)  in MST
+edge:  ('Vancouver_WA', 'Seattle', 165.1) would cause a cycle!
+edge:  ('Charlotte', 'Raleigh', 167.5)  in MST
+edge:  ('Raleigh', 'Charlotte', 167.5) would cause a cycle!
+edge:  ('Raleigh', 'Richmond', 170.4)  in MST
+edge:  ('Richmond', 'Raleigh', 170.4) would cause a cycle!
+edge:  ('Grand_Rapids', 'Chicago', 176.4)  in MST
+edge:  ('Chicago', 'Grand_Rapids', 176.4) would cause a cycle!
+edge:  ('Cleveland', 'Buffalo', 189.4)  in MST
+edge:  ('Buffalo', 'Cleveland', 189.4) would cause a cycle!
+edge:  ('Chicago', 'Galesburg', 197.8)  in MST
+edge:  ('Galesburg', 'Chicago', 197.8) would cause a cycle!
+edge:  ('Fort_Worth', 'Oklahoma_City', 200.1)  in MST
+edge:  ('Oklahoma_City', 'Fort_Worth', 200.1) would cause a cycle!
+edge:  ('Albany', 'Montreal', 221.1)  in MST
+edge:  ('Montreal', 'Albany', 221.1) would cause a cycle!
+edge:  ('Springfield', 'St_Albans', 234.5)  in MST
+edge:  ('St_Albans', 'Springfield', 234.5) would cause a cycle!
+edge:  ('Orlando', 'Miami', 235.0)  in MST
+edge:  ('Miami', 'Orlando', 235.0) would cause a cycle!
+edge:  ('Washington_DC', 'Pittsburgh', 245.2)  in MST
+edge:  ('Pittsburgh', 'Washington_DC', 245.2) would cause a cycle!
+edge:  ('Kansas_City', 'St_Louis', 247.6)  in MST
+edge:  ('St_Louis', 'Kansas_City', 247.6) would cause a cycle!
+edge:  ('Fort_Worth', 'San_Antonio', 268.3)  in MST
+edge:  ('San_Antonio', 'Fort_Worth', 268.3) would cause a cycle!
+edge:  ('Spokane', 'Seattle', 278.9)  in MST
+edge:  ('Seattle', 'Spokane', 278.9) would cause a cycle!
+edge:  ('Miami', 'Tampa', 280.9) would cause a cycle!
+edge:  ('Tampa', 'Miami', 280.9) would cause a cycle!
+edge:  ('Pontiac', 'Chicago', 285.0)  in MST
+edge:  ('Chicago', 'Pontiac', 285.0) would cause a cycle!
+edge:  ('Buffalo', 'Albany', 292.6) would cause a cycle!
+edge:  ('Albany', 'Buffalo', 292.6) would cause a cycle!
+edge:  ('Chicago', 'St_Louis', 296.5)  in MST
+edge:  ('St_Louis', 'Chicago', 296.5) would cause a cycle!
+edge:  ('Philadelphia', 'Pittsburgh', 304.9) would cause a cycle!
+edge:  ('Pittsburgh', 'Philadelphia', 304.9) would cause a cycle!
+edge:  ('Port_Huron', 'Chicago', 338.3)  in MST
+edge:  ('Chicago', 'Port_Huron', 338.3) would cause a cycle!
+edge:  ('Galesburg', 'Kansas_City', 342.0) would cause a cycle!
+edge:  ('Kansas_City', 'Galesburg', 342.0) would cause a cycle!
+edge:  ('Cleveland', 'Chicago', 344.4)  in MST
+edge:  ('Chicago', 'Cleveland', 344.4) would cause a cycle!
+edge:  ('Vancouver_WA', 'Spokane', 355.2) would cause a cycle!
+edge:  ('Spokane', 'Vancouver_WA', 355.2) would cause a cycle!
+edge:  ('Emeryville', 'Los_Angeles', 373.8)  in MST
+edge:  ('Los_Angeles', 'Emeryville', 373.8) would cause a cycle!
+edge:  ('Charlotte', 'Washington_DC', 406.7) would cause a cycle!
+edge:  ('Washington_DC', 'Charlotte', 406.7) would cause a cycle!
+edge:  ('New_Orleans', 'San_Antonio', 543.3)  in MST
+edge:  ('San_Antonio', 'New_Orleans', 543.3) would cause a cycle!
+edge:  ('Portland', 'Sacramento', 581.0)  in MST
+edge:  ('Sacramento', 'Portland', 581.0) would cause a cycle!
+edge:  ('Orlando', 'Raleigh', 594.1)  in MST
+edge:  ('Raleigh', 'Orlando', 594.1) would cause a cycle!
+edge:  ('St_Louis', 'Fort_Worth', 654.9)  in MST
+edge:  ('Fort_Worth', 'St_Louis', 654.9) would cause a cycle!
+edge:  ('Chicago', 'Washington_DC', 700.2) would cause a cycle!
+edge:  ('Washington_DC', 'Chicago', 700.2) would cause a cycle!
+edge:  ('New_Orleans', 'Raleigh', 899.6) would cause a cycle!
+edge:  ('Raleigh', 'New_Orleans', 899.6) would cause a cycle!
+edge:  ('Chicago', 'New_Orleans', 925.1) would cause a cycle!
+edge:  ('New_Orleans', 'Chicago', 925.1) would cause a cycle!
+edge:  ('Los_Angeles', 'San_Antonio', 1356.8)  in MST
+
+
+MINIMUM SPANNING TREE:
+
+
+GraphEL(45, [('Chicago', 'St_Louis', 296.5), ('Vancouver_WA', 'Portland', 8.9), ('Portland', 'Sacramento', 581.0), ('Springfield', 'St_Albans', 234.5), ('Pontiac', 'Chicago', 285.0), ('Richmond', 'Washington_DC', 115.3), ('Orlando', 'Raleigh', 594.1), ('Emeryville', 'Los_Angeles', 373.8), ('Orlando', 'Miami', 235.0), ('Norfolk', 'Richmond', 93.3), ('Boston', 'Brunswick', 136.8), ('Washington_DC', 'Pittsburgh', 245.2), ('Miami', 'Orlando', 235.0), ('Seattle', 'Vancouver_BC', 142.6), ('Charlotte', 'Raleigh', 167.5), ('Grand_Rapids', 'Chicago', 176.4), ('Rutland', 'Albany', 90.9), ('Kansas_City', 'St_Louis', 247.6), ('Albany', 'Springfield', 87.4), ('Los_Angeles', 'Emeryville', 373.8), ('Galesburg', 'Quincy', 118.4), ('Fort_Worth', 'Oklahoma_City', 200.1), ('Raleigh', 'Charlotte', 167.5), ('Fort_Worth', 'San_Antonio', 268.3), ('Raleigh', 'Richmond', 170.4), ('New_Haven', 'Springfield', 63.8), ('Cleveland', 'Chicago', 344.4), ('St_Louis', 'Fort_Worth', 654.9), ('St_Albans', 'Springfield', 234.5), ('Richmond', 'Newport_News', 96.2), ('Cleveland', 'Buffalo', 189.4), ('New_Orleans', 'San_Antonio', 543.3), ('Brunswick', 'Boston', 136.8), ('Buffalo', 'Toronto', 98.9), ('Richmond', 'Norfolk', 93.3), ('Springfield', 'Boston', 90.9), ('Port_Huron', 'Chicago', 338.3), ('Albany', 'Montreal', 221.1), ('San_Antonio', 'Fort_Worth', 268.3), ('Raleigh', 'Orlando', 594.1), ('Spokane', 'Seattle', 278.9), ('Chicago', 'Galesburg', 197.8), ('Philadelphia', 'New_York_City', 96.7), ('Auburn', 'Sacramento', 33.0), ('Washington_DC', 'Richmond', 115.3), ('Chicago', 'Cleveland', 344.4), ('New_York_City', 'Philadelphia', 96.7), ('Buffalo', 'Cleveland', 189.4), ('Quincy', 'Galesburg', 118.4), ('Sacramento', 'Auburn', 33.0), ('Los_Angeles', 'San_Diego', 120.5), ('Fort_Worth', 'St_Louis', 654.9), ('Albany', 'Rutland', 90.9), ('St_Louis', 'Chicago', 296.5), ('Pittsburgh', 'Cleveland', 133.2), ('Washington_DC', 'Philadelphia', 139.1), ('Cleveland', 'Pittsburgh', 133.2), ('Pittsburgh', 'Washington_DC', 245.2), ('San_Diego', 'Los_Angeles', 120.5), ('Vancouver_BC', 'Seattle', 142.6), ('Seattle', 'Vancouver_WA', 165.1), ('San_Antonio', 'New_Orleans', 543.3), ('Springfield', 'Albany', 87.4), ('Montreal', 'Albany', 221.1), ('Portland', 'Vancouver_WA', 8.9), ('Orlando', 'Tampa', 84.2), ('Chicago', 'Port_Huron', 338.3), ('Vancouver_WA', 'Seattle', 165.1), ('Richmond', 'Raleigh', 170.4), ('Toronto', 'Buffalo', 98.9), ('New_York_City', 'New_Haven', 83.1), ('Boston', 'Springfield', 90.9), ('Springfield', 'New_Haven', 63.8), ('Philadelphia', 'Washington_DC', 139.1), ('Seattle', 'Spokane', 278.9), ('St_Louis', 'Kansas_City', 247.6), ('Sacramento', 'Emeryville', 79.0), ('Tampa', 'Orlando', 84.2), ('Oklahoma_City', 'Fort_Worth', 200.1), ('Sacramento', 'Portland', 581.0), ('Newport_News', 'Richmond', 96.2), ('Los_Angeles', 'San_Antonio', 1356.8), ('Galesburg', 'Chicago', 197.8), ('New_Haven', 'New_York_City', 83.1), ('Chicago', 'Pontiac', 285.0), ('Emeryville', 'Sacramento', 79.0), ('Chicago', 'Grand_Rapids', 176.4), ('San_Antonio', 'Los_Angeles', 1356.8)], directed=False)
+
+Graph 1: 45 vertices, 58 edges, 20409.50 total weight.
+Graph 2: 45 vertices, 44 edges, 10277.60 total weight.
+Weight Difference: 10131.90 -- 49.64% of original map
+Edge Difference: 14 -- 24.14% of original map
+
+pboris@ada:~/Bart/graph_hw$ exit
+exit
+
+Script done on Fri 09 Mar 2018 09:32:15 AM PST
